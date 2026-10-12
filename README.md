@@ -1,4 +1,4 @@
-﻿# 🌾 Crop Market Demand Classification
+# 🌾 Crop Market Demand Classification
 
 A machine learning web application that predicts **crop price demand categories** (Low, Medium, High) for Indian agricultural markets using a **Random Forest Classifier** served via a **Flask** web interface.
 
@@ -150,6 +150,7 @@ Market_Demand_Classification/
 ├── crop_demand_model.pkl         # Trained RandomForest model (~147 MB)
 ├── scaler.pkl                    # Fitted StandardScaler
 ├── columns.txt                   # Feature column names (63 features after OHE)
+├── requirements.txt              # Python dependencies
 ├── README.md                     # Project documentation
 │
 └── templates/
@@ -197,14 +198,14 @@ The web form collects the following inputs:
 ### Install Dependencies
 
 ```bash
-pip install flask numpy pandas scikit-learn joblib
+pip install -r requirements.txt
 ```
 
 > Alternatively, create a virtual environment first:
 > ```bash
 > python -m venv venv
 > venv\Scripts\activate   # Windows
-> pip install flask numpy pandas scikit-learn joblib
+> pip install -r requirements.txt
 > ```
 
 ---
